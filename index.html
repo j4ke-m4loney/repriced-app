@@ -1,16 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RePriced</title>
+  <title>Repriced</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
 
+  <nav class="nav">
+    <ul class="nav-links">
+      <li><a href="#">Buy</a></li>
+      <li><a href="#">Rent</a></li>
+    </ul>
+  
+    <div class="logo">
+      <a href="#"><img src="/assets/logo-sgv/Repriced LogosRepriced-logo-black&green.svg" alt="Repriced Logo" /></a>
+    </div>
+  
+    <ul class="nav-links">
+      <li><a href="#">Sell</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-image">
+      <img src="/images/happy couple-hero.png" alt="Repriced Hero Image" />
+    </div>
+    <div class="hero-content">
+      <h1>Fair Prices. Real Listings.</h1>
+      <form class="search-bar">
+        <input type="text" placeholder="Enter suburb, postcode, or price range…" />
+      </form>
+    </div>
+  </header>
+
+  <section class="featured-listings">
+    <h2>Featured Listings</h2>
+  
+    <div class="listing">
+      <div class="listing-images">
+        <img src="/images/houses/H1-front.png" alt="Property Photo 1" />
+        <img src="/images/houses/H1-kitchen.png" alt="Property Photo 2" />
+        <img src="/images/houses/H1-backyard.png" alt="Property Photo 3" />
+        <img src="/images/houses/H1-bathroom.png" alt="Property Photo 4" />
+      </div>
+        <h4>$695,000 
+          <span class="listing-arrow">→</span>
+          <span class="highlight">$649,000</span>
+        </h4>
+        <p>3 Bed • 2 Bath • 2,950 sqft • Richmond, VIC</p>
+      </div>
+    </div>
+    <div class="listing">
+      <div class="listing-images">
+        <img src="/images/houses/H2-front.png" alt="Property Photo 1" />
+        <img src="/images/houses/H2-bathroom.png" alt="Property Photo 2" />
+        <img src="/images/houses/H2-kitchen.png" alt="Property Photo 3" />
+        <img src="/images/houses/H2-backyard.png" alt="Property Photo 4" />
+      </div>
+      <h4>$850,000 
+        <span class="listing-arrow">→</span>
+        <span class="highlight">$799,000</span>
+      </h4>
+      <p>4 Bed • 3 Bath • 3,500 sqft • Brunswick, VIC</p>
+    </div>
+    <button>Browse Listings</button>
+  </section>
+
+  <section class="agent-cta">
+    <h2>Are You an Agent?</h2>
+    <p>Get more eyes on your listings with price-smart visibility tools. First 50 agents list free.</p>
+    <button>List with Repriced</button>
+  </section>
+
+  <section class="benefits-grid">
+    <div class="benefit">
+      <h2>Why Repriced?</h2>
+      <h3>For Buyers</h3>
+      <p>Find undervalued homes, view price history, and get alerts on new deals.</p>
+    </div>
+    <div class="benefit">
+      <h3>For Sellers</h3>
+      <p>Price to match demand, avoid stale listings, and attract serious buyers.</p>
+    </div>
+    <div class="benefit">
+      <h3>For Agents</h3>
+      <p>Build trust with clients, list fast, and stand out with pricing insights.</p>
+    </div>
+  </section>
+
+</body>
 </html>
