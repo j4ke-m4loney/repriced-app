@@ -1,0 +1,74 @@
+### Add multiple listings
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Coastal 2BR Hideaway",
+  "address": "88 Beach Rd, Byron Bay",
+  "price": 790000,
+  "originalPrice": 850000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "Now Under $800K",
+  "description": "A cozy escape just minutes from the ocean with modern finishes and lush greenery."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Modern Loft Apartment",
+  "address": "12 Cityview Blvd, Melbourne",
+  "price": 620000,
+  "originalPrice": 680000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "-9%",
+  "description": "Stylish and open-concept living in the heart of Melbourne’s creative district."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Family Home with Garden",
+  "address": "5 Oak St, Geelong",
+  "price": 710000,
+  "originalPrice": 740000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "Just Repriced",
+  "description": "Spacious 4-bedroom home with a large backyard, ideal for growing families."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Renovated Inner-City Studio",
+  "address": "47 Lygon St, Carlton",
+  "price": 465000,
+  "originalPrice": 500000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "-7%",
+  "description": "Chic, compact studio near cafes, universities, and trams — perfect for first-home buyers."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Suburban Duplex Opportunity",
+  "address": "102 Sunset Ave, Penrith",
+  "price": 585000,
+  "originalPrice": 630000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "Biggest Drop",
+  "description": "Modern duplex with two levels, garage, and private courtyard."
+}

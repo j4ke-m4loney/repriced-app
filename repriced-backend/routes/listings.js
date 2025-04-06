@@ -13,20 +13,14 @@ router.get('/', async (req, res) => {
 });
 
 // OPTIONAL: Seed route to add a sample listing
-router.post('/seed', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
-    const sample = new Listing({
-      title: "Modern 3BR Apartment",
-      address: "123 Example Street, Sydney",
-      price: 780000,
-      originalPrice: 820000,
-      imageUrl: "https://res.cloudinary.com/demo/image/upload/sample.jpg",
-      tag: "-5%"
-    });
-    await sample.save();
-    res.json(sample);
+    const newListing = new Listing(req.body);
+    await newListing.save();
+    res.status(201).json(newListing);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to create sample listing' });
+    console.error('Error creating listing:', err);
+    res.status(400).json({ error: 'Failed to create listing' });
   }
 });
 
