@@ -1,0 +1,19 @@
+repriced-backend/node_modules/
+
+# Frontend node_modules
+repriced-frontend/node_modules/
+
+# Logs
+**/logs/
+*.log
+
+# Env files
+repriced-backend/.env
+repriced-frontend/.env
+
+# System junk
+.DS_Store
+
+# Optional: builds
+repriced-frontend/build/
+repriced-backend/dist/
