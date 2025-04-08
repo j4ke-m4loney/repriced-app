@@ -10,7 +10,7 @@ const categories = [
 
 const CategoryBar = () => {
   return (
-    <div className="bg-white border-b py-3 overflow-x-auto whitespace-nowrap scrollbar-hide">
+    <div className="bg-white py-0 overflow-x-auto whitespace-nowrap scrollbar-hide">
       <div className="flex justify-center gap-4 px-4 max-w-7xl mx-auto">
         {categories.map((cat) => (
           <button

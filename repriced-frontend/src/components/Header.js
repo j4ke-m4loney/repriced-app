@@ -9,11 +9,11 @@ export default function Header() {
       {/* Top Navigation Bar */}
       <div className="flex justify-between items-center px-4 py-2 max-w-screen-xl mx-auto">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 px-6">
           <img
             src="/images/home/Repriced LogosRepriced-logo-black&green.svg"
             alt="Repriced Logo"
-            className="w-16 h-16 object-contain"
+            className="w-10 h-10 object-contain"
           />
           {/* Optional brand text */}
           {/* <span className="text-lg font-semibold text-green-600">Repriced</span> */}
@@ -36,36 +36,62 @@ export default function Header() {
         </div>
 
         {/* Login / User Icon */}
-        <div className="flex items-center gap-2 text-sm text-gray-600">
+        <div className="flex items-center gap-2 text-sm text-gray-600 px-6">
           <span className="hidden md:inline">Login</span>
           <FaUserCircle className="text-xl" />
         </div>
       </div>
 
       {/* Search Bar */}
-      <div className="flex justify-center px-4 pb-4">
-        <div className="flex w-full max-w-4xl bg-white shadow-md rounded-full overflow-hidden border">
+      <div className="flex justify-center px-8 pb-4">
+        <div className="flex w-full max-w-2xl bg-white shadow-lg rounded-full overflow-hidden border border-gray-250">
+          
+          {/* Input Field */}
           <input
             type="text"
-            placeholder="Search suburbs, postcode or state"
-            className="flex-1 px-4 py-2 text-sm outline-none"
+            placeholder="Search suburbs, postcode or state..."
+            className="flex-grow px-6 py-4 text-sm placeholder-gray-700 outline-none hover:bg-gray-200 cursor-pointer"
           />
-          <select className="px-4 py-2 border-l text-sm text-gray-700 outline-none">
+
+          {/* Property Type */}
+          <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
+          <select className="w-25 px-6 py-2 border-l group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
             <option>Property Type</option>
             <option>House</option>
             <option>Apartment</option>
             <option>Land</option>
           </select>
-          <select className="px-4 py-2 border-l text-sm text-gray-700 outline-none">
+          </div>
+
+          {/* Price */}
+          <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
+          <select className="w-20 px-6 py-2 border-l group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
             <option>Price</option>
             <option>$200k - $400k</option>
             <option>$400k - $600k</option>
             <option>$600k - $800k</option>
             <option>$800k - $1Mil</option>
           </select>
-          <button className="bg-green-500 hover:bg-green-600 text-white p-3 flex items-center justify-center">
+          </div>
+          
+
+          {/* Bedrooms */}
+          <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
+          <select className="w-30 px-6 py-2 border-l group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
+            <option>Bedrooms</option>
+            <option>1+</option>
+            <option>2+</option>
+            <option>3+</option>
+            <option>4+</option>
+          </select>
+          </div>
+
+          {/* Search Button */}
+          <div className="flex justify-center items-center pr-4">
+          <button className="bg-green-500 hover:bg-green-600 text-white w-10 h-10 flex items-center justify-center rounded-full">
             <FaSearch className="text-sm" />
           </button>
+          </div>
         </div>
       </div>
     </header>
