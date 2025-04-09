@@ -50,22 +50,27 @@ export default function Header() {
           <input
             type="text"
             placeholder="Search suburbs, postcode or state..."
-            className="flex-grow px-6 py-4 text-sm placeholder-gray-700 outline-none hover:bg-gray-200 cursor-pointer"
+            className="search-input flex-grow px-6 py-4 text-sm placeholder-gray-700 outline-none hover:bg-gray-200 rounded-3xl cursor-pointer"
           />
+
+          {/* Separator div */}
+          <div className="input-sep w-px h-8 bg-gray-200 self-center"></div>
 
           {/* Property Type */}
           <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
-          <select className="w-25 px-6 py-2 border-l group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
+          <select className="property-type-input w-25 px-6 py-2 group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
             <option>Property Type</option>
             <option>House</option>
             <option>Apartment</option>
             <option>Land</option>
           </select>
+          {/* Separator div */}
           </div>
-
+          <div className="property-sep w-px h-8 bg-gray-200 self-center"></div>
+           
           {/* Price */}
           <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
-          <select className="w-20 px-6 py-2 border-l group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
+          <select className="w-20 px-6 py-2 text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
             <option>Price</option>
             <option>$200k - $400k</option>
             <option>$400k - $600k</option>
@@ -73,11 +78,12 @@ export default function Header() {
             <option>$800k - $1Mil</option>
           </select>
           </div>
-          
+           {/* Separator div */}
+          <div className="price-sep w-px h-8 bg-gray-200 self-center"></div>
 
           {/* Bedrooms */}
           <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
-          <select className="w-30 px-6 py-2 border-l group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
+          <select className="w-30 px-6 py-2 group-hover:border-transparent text-sm text-gray-700 outline-none appearance-none bg-transparent cursor-pointer">
             <option>Bedrooms</option>
             <option>1+</option>
             <option>2+</option>

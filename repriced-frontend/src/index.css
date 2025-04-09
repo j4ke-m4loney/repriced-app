@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.search-input:hover + .input-sep {
+  display: none;
+}
+  
+.property-type-input:hover + .property-sep {
+  display: none; 
+}
