@@ -72,3 +72,93 @@ Content-Type: application/json
   "tag": "Biggest Drop",
   "description": "Modern duplex with two levels, garage, and private courtyard."
 }
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Minimalist City Retreat",
+  "address": "9 Palmer St, South Yarra",
+  "price": 810000,
+  "originalPrice": 850000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "-5%",
+  "description": "Modern 2-bedroom apartment with rooftop access and skyline views."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Sunlit Hillside Villa",
+  "address": "25 Olive Grove, Adelaide Hills",
+  "price": 970000,
+  "originalPrice": 1050000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "Now Under $1M",
+  "description": "Secluded villa with panoramic views and a private garden."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Contemporary Townhouse",
+  "address": "132 Parkside Ave, Newcastle",
+  "price": 690000,
+  "originalPrice": 720000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "Just Repriced",
+  "description": "3BR townhouse near parks and schools with modern finishes."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Beachfront Studio with Balcony",
+  "address": "18 Esplanade, Gold Coast",
+  "price": 495000,
+  "originalPrice": 525000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "-6%",
+  "description": "Bright, modern studio right on the beach with water views."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Country Estate with Acreage",
+  "address": "640 Wattle Rd, Ballarat",
+  "price": 875000,
+  "originalPrice": 940000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "New Value",
+  "description": "Sprawling estate with land, gardens, and multiple living zones."
+}
+
+###
+
+POST http://localhost:5001/api/listings
+Content-Type: application/json
+
+{
+  "title": "Compact First-Home Buy",
+  "address": "29 McRae St, Frankston",
+  "price": 420000,
+  "originalPrice": 450000,
+  "imageUrl": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+  "tag": "Now Under $450K",
+  "description": "Neat and tidy 2BR unit perfect for first-time buyers or investors."
+}
