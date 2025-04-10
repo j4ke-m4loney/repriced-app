@@ -13,7 +13,7 @@ export default function Header() {
           <img
             src="/images/home/Repriced LogosRepriced-logo-black&green.svg"
             alt="Repriced Logo"
-            className="w-10 h-10 object-contain"
+            className="w-24 h-12 object-contain"
           />
           {/* Optional brand text */}
           {/* <span className="text-lg font-semibold text-green-600">Repriced</span> */}
