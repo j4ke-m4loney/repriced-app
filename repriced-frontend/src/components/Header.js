@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import HeaderNav from "./HeaderNav";
 import DesktopSearchBar from "./DesktopSearchBar";
 import MobileSearchBar from "./MobileSearchBar";
-import { FaSearch, FaUserCircle } from "react-icons/fa";
 
 export default function Header() {
   const [activeTab, setActiveTab] = useState("Buy");
