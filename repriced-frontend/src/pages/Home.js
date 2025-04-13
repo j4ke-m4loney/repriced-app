@@ -23,10 +23,10 @@ const Home = () => {
   return (
     <>
     <Header />
-    <div className="mx-auto px-1 sm:px-12 py-6 border-t border-gray-200">
+    <div className="mx-auto px-2 sm:px-4 lg:px-6 sxl:px-12 xl:px-6 xlx:px-16 xxl:px-20 py-6 border-t border-gray-200">
     <CategoryBar/>
       <h1 className="pt-6 text-1x1 font-bold mb-6 text-center text-gray-500">Discover the best deals in real estate</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xlx:grid-cols-5 xxl:grid-cols-6 gap-4">
         {listings.map((listing) => (
           <ListingCard key={listing._id} {...listing} />
         ))}
