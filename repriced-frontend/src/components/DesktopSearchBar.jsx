@@ -5,11 +5,11 @@ import { FaSearch } from 'react-icons/fa';
 const DesktopSearchBar = () => {
   return (
     <div className="hidden md:flex justify-center px-8 pb-4">
-      <div className="flex w-full max-w-2xl bg-white shadow-lg rounded-full overflow-hidden border border-gray-250">
+      <div className="flex w-full max-w-2xl bg-white md:shadow-lg shadow-none rounded-full overflow-hidden border border-gray-250">
         <input
           type="text"
           placeholder="Search suburbs, postcode or state..."
-          className="search-input flex-grow px-6 py-4 text-sm placeholder-gray-700 outline-none hover:bg-gray-200 rounded-3xl cursor-pointer"
+          className="flex-1 min-w-0 search-input flex-grow px-6 py-4 text-sm placeholder-gray-700 outline-none hover:bg-gray-200 rounded-3xl cursor-pointer"
         />
 
         <div className="group flex items-center hover:bg-gray-200 rounded-3xl transition-all duration-200">
@@ -46,7 +46,7 @@ const DesktopSearchBar = () => {
         </div>
 
         <div className="flex justify-center items-center pr-4">
-          <button className="bg-green-500 hover:bg-green-600 text-white w-10 h-10 flex items-center justify-center rounded-full">
+          <button className="flex-shrink-0 bg-green-500 hover:bg-green-600 text-white w-10 h-10 flex items-center justify-center rounded-full">
             <FaSearch className="text-sm" />
           </button>
         </div>

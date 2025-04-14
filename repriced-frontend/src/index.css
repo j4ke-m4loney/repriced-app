@@ -9,3 +9,21 @@
 .property-type-input:hover + .property-sep {
   display: none; 
 }
+
+/* Scrollbar customization */
+/* Apply to the scrollable container */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 3px;
+  background: #dedede;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+  height: 3px;
+  transition: background 0.3s ease;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #666;
+}

@@ -5,7 +5,7 @@ const MobileSearchBar = () => {
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   return (
-    <div className="block md:hidden px-4 pb-4 pt-4">
+    <div className="block md:hidden px-4 pt-4">
       <div className="bg-white border rounded-full shadow-md px-4 py-3">
         <button
           className="w-full text-center text-gray-500 text-sm"
