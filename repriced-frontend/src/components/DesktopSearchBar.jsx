@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const DesktopSearchBar = () => {
   return (
-    <div className="hidden md:flex justify-center px-8 pb-4">
+    <div className="hidden md:flex justify-center px-8 p-4">
       <div className="flex w-full max-w-2xl bg-white md:shadow-lg shadow-none rounded-full overflow-hidden border border-gray-250">
         <input
           type="text"
