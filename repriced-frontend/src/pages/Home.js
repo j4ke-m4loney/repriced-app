@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const fetchListings = async () => {
       try {
-        const res = await axios.get('http://localhost:5001/api/listings');
+        const res = await axios.get('https://repriced-backend.onrender.com/api/listings');
         setListings(res.data);
       } catch (err) {
         console.error('Failed to fetch listings:', err);
