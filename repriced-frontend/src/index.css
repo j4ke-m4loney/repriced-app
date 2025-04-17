@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Custom styles for the search input and property type input */
 .search-input:hover + .input-sep {
   display: none;
 }
-  
+
+/* Hide the separator when the input is focused */
 .property-type-input:hover + .property-sep {
   display: none; 
 }
