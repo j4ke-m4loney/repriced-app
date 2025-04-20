@@ -1,6 +1,6 @@
 import React from 'react';
 
-const categories = [
+const categories = [ // Array of category objects
   {
     label: "Just Repriced",
     icon: "/images/icons/just-repriced.webp",
