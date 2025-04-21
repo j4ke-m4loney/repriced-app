@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 
-const HeaderNav = ({ activeTab, setActiveTab }) => {
+const HeaderNav = ({ activeTab, setActiveTab, isScrolled }) => {
   return (
     <div className="w-full px-4 pt-4">
       {/* Full-width container with relative positioning */}
