@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import ListingCard from "../components/ListingCard";
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 // This component fetches and displays a list of properties for sale
 const Buy = () => {
@@ -59,7 +60,9 @@ const Buy = () => {
           <h2 className="text-xl font-semibold mb-4">Properties for Sale</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             {listings.map((listing) => (
-              <ListingCard key={listing._id} {...listing} />
+              <Link to={`/property/${listing._id}`} key={listing._id}>
+                <ListingCard {...listing} />
+              </Link>
             ))}
           </div>
         </div>
