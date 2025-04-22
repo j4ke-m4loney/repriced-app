@@ -16,6 +16,7 @@ const Home = () => {
         );
 
         setListings(res.data);
+        console.log("DATA RECEIVED:", res.data);
       } catch (err) {
         console.error("Failed to fetch listings:", err);
       }
