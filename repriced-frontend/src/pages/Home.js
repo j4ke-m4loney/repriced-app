@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const fetchListings = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/listings`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/listings?type=rent`);
 
         setListings(res.data);
       } catch (err) {

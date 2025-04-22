@@ -4,7 +4,7 @@ import ListingCard from "../components/ListingCard";
 import Header from "../components/Header";
 
 // This component fetches and displays a list of properties for sale
-const Buy = () => {
+const Rent = () => {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const Buy = () => {
 
         {/* Listings Section */}
         <div className="w-full md:w-[60%] md:h-[calc(100vh-160px)] overflow-y-auto p-4">
-          <h2 className="text-xl font-semibold mb-4">Properties for Sale</h2>
+        <h2 className="text-xl font-semibold mb-4">Properties for Rent</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             {listings.map((listing) => (
               <ListingCard key={listing._id} {...listing} />
@@ -84,4 +84,4 @@ const Buy = () => {
   );
 };
 
-export default Buy;
+export default Rent;
