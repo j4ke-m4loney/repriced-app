@@ -1,0 +1,56 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import ListingCard from "../components/ListingCard";
+import Header from "../components/Header";
+
+const Buy = () => {
+  const [listings, setListings] = useState([]);
+
+  useEffect(() => {
+    const fetchListings = async () => {
+      try {
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/listings`
+        );
+        setListings(res.data);
+      } catch (err) {
+        console.error("Failed to fetch listings:", err);
+      }
+    };
+
+    fetchListings();
+  }, []);
+
+  return (
+    <>
+      <Header />
+      <div className="flex flex-col md:flex-row pt-[160px] md:pt-0">
+        {/* Mobile Map at the Top */}
+        <div className="hidden md:block w-[40%] fixed right-0 top-[160px] h-[calc(100vh-160px)] bg-gray-100 z-10">
+          <div className="w-full h-full flex items-center justify-center text-gray-400">
+            [ Map Placeholder ]
+          </div>
+        </div>
+
+        {/* Listings Section */}
+        <div className="w-full md:w-[60%] md:h-[calc(100vh-100px)] overflow-y-auto p-4">
+          <h2 className="text-xl font-semibold mb-4">Properties for Sale</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+            {listings.map((listing) => (
+              <ListingCard key={listing._id} {...listing} />
+            ))}
+          </div>
+        </div>
+
+        {/* Map on Desktop - fixed to the right */}
+        <div className="hidden md:block w-[40%] fixed right-0 top-[100px] h-[calc(100vh-100px)] bg-gray-100 z-10">
+          <div className="w-full h-full flex items-center justify-center text-gray-400">
+            [ Map Placeholder ]
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Buy;
