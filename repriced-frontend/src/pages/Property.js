@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Header from '../components/Header';
 
+
+// This component fetches and displays the details of a property listing
 const Property = () => {
   const { id } = useParams();
   console.log("Property ID:", id);
