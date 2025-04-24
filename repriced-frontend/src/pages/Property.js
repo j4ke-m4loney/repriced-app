@@ -28,12 +28,19 @@ const Property = () => {
   return (
     <>
       <Header />
-      <div className="pt-[160px] max-w-5xl mx-auto px-4 space-y-6">
+      <div className="pt-[60px] max-w-5xl mx-auto px-4 space-y-6">
+        <div className='grid grid-cols-2 gap-1'>
         <img
           src={listing.imageUrl}
           alt={listing.title}
-          className="w-full h-64 object-cover rounded-xl"
+          className="w-full h-70 object-cover rounded-xl"
         />
+        <img
+          src={listing.imageUrl}
+          alt={listing.title}
+          className="w-full h-70 object-cover rounded-xl"
+        />
+        </div>
         <div>
           <h1 className="text-2xl font-bold">{listing.title}</h1>
           <p className="text-gray-600 text-sm">{listing.address}</p>
