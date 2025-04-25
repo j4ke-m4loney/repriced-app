@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import axios from 'axios';
-import Header from '../components/Header';
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import Header from "../components/Header";
 
 // This component fetches and displays the details of a property listing
 const Property = () => {
@@ -13,10 +12,12 @@ const Property = () => {
   useEffect(() => {
     const fetchListing = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/listings/${id}`);
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/listings/${id}`
+        );
         setListing(res.data);
       } catch (err) {
-        console.error('Failed to fetch property:', err);
+        console.error("Failed to fetch property:", err);
       }
     };
 
@@ -29,17 +30,29 @@ const Property = () => {
     <>
       <Header />
       <div className="pt-[60px] max-w-5xl mx-auto px-4 space-y-6">
-        <div className='grid grid-cols-2 gap-1'>
-        <img
-          src={listing.imageUrl}
-          alt={listing.title}
-          className="w-full h-70 object-cover rounded-xl"
-        />
-        <img
-          src={listing.imageUrl}
-          alt={listing.title}
-          className="w-full h-70 object-cover rounded-xl"
-        />
+        <div className="hidden md:flex gap-2 rounded-xl overflow-hidden">
+          {/* Large Image */}
+          <div className="w-2/3">
+            <img
+              src={listing.imageUrl}
+              alt={listing.title}
+              className="w-full h-[500px] object-cover"
+            />
+          </div>
+
+          {/* 2x2 Grid of Small Images */}
+          <div className="w-1/3 grid grid-cols-2 grid-rows-2 gap-2">
+            {Array(4)
+              .fill(null)
+              .map((_, i) => (
+                <img
+                  key={i}
+                  src={listing.imageUrl}
+                  alt={`Image ${i + 1}`}
+                  className="w-full h-[245px] object-cover"
+                />
+              ))}
+          </div>
         </div>
         <div>
           <h1 className="text-2xl font-bold">{listing.title}</h1>
