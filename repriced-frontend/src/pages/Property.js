@@ -42,24 +42,24 @@ const Property = () => {
 
           {/* 2x2 Grid of Small Images */}
           <div className="w-1/3 grid grid-cols-2 grid-rows-2 gap-2">
-            {Array(4)
-              .fill(null)
-              .map((_, i) => (
-                <img
-                  key={i}
-                  src={listing.imageUrl}
+            {Array(4) // 4 small images
+              .fill(null) // Placeholder for 4 images
+              .map((_, i) => ( // Replace with actual image URLs
+                <img 
+                  key={i} 
+                  src={listing.imageUrl} 
                   alt={`Image ${i + 1}`}
-                  className="w-full h-[245px] object-cover"
+                  className="w-full h-[245px] object-cover" 
                 />
               ))}
           </div>
         </div>
         <div>
-          <h1 className="text-2xl font-bold">{listing.title}</h1>
-          <p className="text-gray-600 text-sm">{listing.address}</p>
+          <h1 className="text-2xl font-bold">{listing.title}</h1> 
+          <p className="text-gray-600 text-sm">{listing.address}</p> 
         </div>
         <div className="text-xl font-semibold text-green-600">
-          ${listing.price.toLocaleString()}
+          ${listing.price.toLocaleString()} 
           {listing.originalPrice > listing.price && (
             <span className="text-sm text-gray-400 line-through ml-3">
               ${listing.originalPrice.toLocaleString()}
