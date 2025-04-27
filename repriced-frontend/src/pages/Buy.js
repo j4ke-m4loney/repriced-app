@@ -46,7 +46,7 @@ const Buy = () => {
   return (
     <>
       <Header />
-
+  
       <div className="flex flex-col md:flex-row pt-[160px] md:pt-0">
         {/* Mobile Map - Top */}
         <div className="block md:hidden w-full h-48 bg-gray-100 mb-4">

@@ -58,7 +58,7 @@ const Property = () => {
           <h1 className="text-2xl font-bold">{listing.title}</h1> 
           <p className="text-gray-600 text-sm">{listing.address}</p> 
         </div>
-        <div className="text-xl font-semibold text-green-600">
+        <div className="text-xl font-semibold text-green-600"> 
           ${listing.price.toLocaleString()} 
           {listing.originalPrice > listing.price && (
             <span className="text-sm text-gray-400 line-through ml-3">
