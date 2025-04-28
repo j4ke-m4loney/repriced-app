@@ -47,4 +47,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; // This is the Home component that fetches and displays listings
