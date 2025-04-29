@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../components/Header";
 import ListingCard from "../components/ListingCard";
 import CategoryBar from "../components/CategoryBar";
+import Footer from '../components/Footer'
 import { Link } from "react-router-dom"; 
 
 const Home = () => {
@@ -43,6 +44,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

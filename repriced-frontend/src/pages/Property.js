@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../components/Header";
+import Footer from '../components/Footer'
 
 // This component fetches and displays the details of a property listing
 const Property = () => {
@@ -71,6 +72,7 @@ const Property = () => {
           Listed by {listing.realtor}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

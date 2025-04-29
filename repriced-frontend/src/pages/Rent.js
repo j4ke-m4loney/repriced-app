@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import ListingCard from "../components/ListingCard";
 import Header from "../components/Header";
+import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
 
 // This component fetches and displays a list of properties for sale
@@ -83,6 +84,7 @@ const Rent = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
