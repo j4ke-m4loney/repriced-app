@@ -9,6 +9,7 @@ const HeaderNav = ({ activeTab, setActiveTab, isScrolled }) => {
         
       <div className="flex items-center pl-2 md:pl-6"> 
         {/* Full Logo */}
+        
         <div className="flex items-center pl-2 md:pl-8">
           <img
             src="/logo/repriced-logo-2.svg"

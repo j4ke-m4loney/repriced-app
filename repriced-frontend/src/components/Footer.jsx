@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div className="flex text-xs">
           <p>
-          © 2025 Repriced
+          © {new Date().getFullYear()} Repriced
           </p>
         </div>
       </div>
