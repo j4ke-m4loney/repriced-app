@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../components/Header";
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
 
 // This component fetches and displays the details of a property listing
 const Property = () => {
@@ -43,24 +43,24 @@ const Property = () => {
 
           {/* 2x2 Grid of Small Images */}
           <div className="w-1/3 grid grid-cols-2 grid-rows-2 gap-2">
-            {Array(4) // 4 small images
-              .fill(null) // Placeholder for 4 images
-              .map((_, i) => ( // Replace with actual image URLs
-                <img 
-                  key={i} 
-                  src={listing.imageUrl} 
+            {Array(4)
+              .fill(null)
+              .map((_, i) => (
+                <img
+                  key={i}
+                  src={listing.imageUrl}
                   alt={`Image ${i + 1}`}
-                  className="w-full h-[245px] object-cover" 
+                  className="w-full h-[245px] object-cover"
                 />
               ))}
           </div>
         </div>
         <div>
-          <h1 className="text-2xl font-bold">{listing.title}</h1> 
+          <h1 className="text-2xl font-bold">{listing.title}</h1>
           <p className="text-gray-600 text-sm">{listing.address}</p>
         </div>
-        <div className="text-xl font-semibold text-green-600"> 
-          ${listing.price.toLocaleString()} 
+        <div className="text-xl font-semibold text-green-600">
+          ${listing.price.toLocaleString()}
           {listing.originalPrice > listing.price && (
             <span className="text-sm text-gray-400 line-through ml-3">
               ${listing.originalPrice.toLocaleString()}
@@ -72,14 +72,13 @@ const Property = () => {
           Listed by {listing.realtor}
         </div>
         <div
-            className=" text-gray-400"
-            style={{
-              
-              transition: "transform 0.2s",
-            }}
-          >
-            [ Map Placeholder ]
-          </div>
+          className=" text-gray-400"
+          style={{
+            transition: "transform 0.2s",
+          }}
+        >
+          [ Map Placeholder ]
+        </div>
       </div>
       <Footer />
     </>
