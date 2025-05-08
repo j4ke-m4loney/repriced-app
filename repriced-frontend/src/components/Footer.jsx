@@ -13,7 +13,7 @@ const Footer = () => {
             className="w-24 mb-3"
           />
           <p className="text-sm">
-            Helping you discover repriced property deals across Australia.
+            Helping you discover repriced property deals across Australia and New Zealand.
           </p>
         </div>
 
