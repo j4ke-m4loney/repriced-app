@@ -12,12 +12,14 @@
 ## 🚀 Technologies Used
 
 ### Frontend
+
 - **React.js** – component-based UI
 - **Tailwind CSS** – modern utility-first styling
 - **React Router** – client-side routing
 - **Axios** – HTTP requests
 
 ### Backend
+
 - **Express.js** – API server
 - **MongoDB** – NoSQL database
 - **Mongoose** – MongoDB object modeling
@@ -25,9 +27,10 @@
 - **Dotenv** – environment variable management
 
 ### Deployment
+
 - **Netlify** – frontend hosting
 - **Render** – backend server (Node + MongoDB)
-- **GoDaddy** – domain name management  
+- **GoDaddy** – domain name management
 - **Cloudinary** – image hosting (for listing images)
 
 ## ✅ Features Implemented
@@ -40,7 +43,7 @@
 - **Listing details page** with sticky agent info and image grid
 - **Deployed frontend + backend with live domain**
 
- ## 🛣️ Roadmap
+## 🛣️ Roadmap
 
 - [ ] Add user authentication (Login / Register)
 - [ ] Agent dashboard for submitting listings
