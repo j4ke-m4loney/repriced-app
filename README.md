@@ -2,7 +2,7 @@
 
 **Repriced** is a full-stack real estate listing platform that highlights repriced or discounted properties. Inspired by platforms like Airbnb and RealEstate.com.au, the goal is to create a transparent, fast, and user-friendly experience for buyers and renters.
 
-![Homepage Screenshot](./public/repriced-homepage-screenshot.png)
+![Homepage Screenshot](./assets/repriced-homepage-screenshot.png)
 
 🌐 **Live Demo**  
 🔗 [preview.repriced.com.au](https://preview.repriced.com.au)
