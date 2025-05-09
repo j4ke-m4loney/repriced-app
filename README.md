@@ -1,15 +1,15 @@
-# 🏡 Repriced
+# Repriced
 
 **Repriced** is a full-stack real estate listing platform that highlights repriced or discounted properties. Inspired by platforms like Airbnb and RealEstate.com.au, the goal is to create a transparent, fast, and user-friendly experience for buyers and renters.
 
 ![Homepage Screenshot](./assets/repriced-homepage-screenshot.png)
 
-🌐 **Live Demo**  
+**Live Demo**  
 🔗 [preview.repriced.com.au](https://preview.repriced.com.au)
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 
 ### Frontend
 
@@ -33,7 +33,7 @@
 - **GoDaddy** – domain name management
 - **Cloudinary** – image hosting (for listing images)
 
-## ✅ Features Implemented
+## Features Implemented
 
 - **Dynamic property cards**
 - **Responsive design across all devices**
@@ -43,7 +43,7 @@
 - **Listing details page** with sticky agent info and image grid
 - **Deployed frontend + backend with live domain**
 
-## 🛣️ Roadmap
+## Roadmap
 
 - [ ] Add user authentication (Login / Register)
 - [ ] Agent dashboard for submitting listings
@@ -52,7 +52,7 @@
 - [ ] Advanced search filters
 - [ ] Paginated results and lazy loading
 
-## 🎯 Goals
+## Goals
 
 - Build a real estate platform that combines the best features of Airbnb and realestate.com.au
 - Deliver a clean, responsive user experience optimized for both mobile and desktop users
