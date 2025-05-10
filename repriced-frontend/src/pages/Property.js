@@ -45,7 +45,7 @@ const Property = () => {
                 <img
                   key={i}
                   src={listing.imageUrl}
-                  alt={`Photo ${i + 1} of ${listing.title}`}
+                  alt={`${i + 1} of ${listing.title}`}
                   className="w-full h-[245px] object-cover"
                 />
               ))}
