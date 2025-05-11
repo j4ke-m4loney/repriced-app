@@ -77,7 +77,7 @@ const Property = () => {
           <div className="hidden md:block sticky top-[100px] self-start bg-gray-50 p-4 rounded-xl shadow-sm h-fit">
             <h3 className="text-lg font-semibold mb-2">Agent Information</h3>
             <p className="text-sm text-gray-700 mb-1">
-              <strong>Company:</strong> {listing.realtor}
+              <strong>Agency:</strong> {listing.realtor}
             </p>
             <p className="text-sm text-gray-700 mb-1">
               <strong>Phone:</strong> 0412 345 678
