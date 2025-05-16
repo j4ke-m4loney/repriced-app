@@ -83,12 +83,23 @@ const Property = () => {
               <strong>Phone:</strong> 0412 345 678
             </p>
             <p className="text-sm text-gray-700 mb-4">
-              <strong>Email:</strong>{" "}
-              agent@{listing.realtor?.toLowerCase().replace(/\s/g, "")}.com
+              <strong>Email:</strong> agent@
+              {listing.realtor?.toLowerCase().replace(/\s/g, "")}.com
             </p>
             <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-sm w-full">
               Contact Agent
             </button>
+          </div>
+
+          <div className="md:col-span-2 text-sm text-gray-500 ">
+            <p>
+              {listing.descriptionLong} Long listing Description text Long
+              listing Description text Long listing Description text Long
+              listing Description text Long listing Description text Long
+              listing Description text Long listing Description text Long
+              listing Description text Long listing Description text Long
+              listing Description text
+            </p>
           </div>
         </div>
       </div>
