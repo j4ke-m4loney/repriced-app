@@ -6,7 +6,7 @@ require('dotenv').config();
 // Create app first
 const app = express();
 
-// Middleware
+// Middleware for protected information 
 const allowedOrigins = process.env.ALLOWED_ORIGINS.split(',');
 
 app.use(cors({
