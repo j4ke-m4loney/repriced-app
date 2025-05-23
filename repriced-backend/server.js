@@ -21,7 +21,7 @@ app.use(cors({
 
 app.use(express.json());
 
-// Routes
+// Route for listing pages
 const listingRoutes = require('./routes/listings');
 app.use('/api/listings', listingRoutes);
 
