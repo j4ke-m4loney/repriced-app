@@ -93,12 +93,7 @@ const Property = () => {
 
           <div className="md:col-span-2 text-sm text-gray-500 ">
             <p>
-              {listing.descriptionLong} Long listing Description text Long
-              listing Description text Long listing Description text Long
-              listing Description text Long listing Description text Long
-              listing Description text Long listing Description text Long
-              listing Description text Long listing Description text Long
-              listing Description text
+              {listing.descriptionLong} Long listing Description 
             </p>
           </div>
         </div>
