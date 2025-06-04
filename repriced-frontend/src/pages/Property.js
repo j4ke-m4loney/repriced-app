@@ -84,7 +84,7 @@ const Property = () => {
             </h3>
             <div className="flex items-center gap-4">
               {/* Agent Image */}
-              <div className="w-[150px] h-[150px] bg-yellow-200 flex items-center justify-center rounded-full text-gray-500 text-lg">
+              <div className="w-[150px] h-[150px] bg-gray-200 flex items-center justify-center rounded-full text-gray-500 text-lg">
                 Agent Image
               </div>
 

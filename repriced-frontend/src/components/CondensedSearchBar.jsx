@@ -1,21 +1,26 @@
 import React from "react";
 import { FaUserCircle, FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CondensedSearchBar = ({ onOpenFullSearch }) => {
   return (
     <div className="fixed top-0 left-0 w-full bg-white shadow-sm z-50 px-4 py-3 hidden md:flex items-center justify-between">
       {/* Left - Logo */}
       <div className="flex items-center gap-2">
-        <img
-          src="/logo/repriced-logo-2.svg"
-          alt="Repriced Logo"
-          className="hidden xl:block w-[120px] h-auto object-contain"
-        />
-        <img
-          src="/logo/repriced-logo-symbol-2.svg"
-          alt="Repriced Symbol Logo"
-          className="block xl:hidden w-8 h-8 object-contain"
-        />
+        <Link to="/">
+          <img
+            src="/logo/repriced-logo-2.svg"
+            alt="Repriced Logo"
+            className="hidden xl:block w-[120px] h-auto object-contain"
+          />
+        </Link>
+        <Link to="/">
+          <img
+            src="/logo/repriced-logo-symbol-2.svg"
+            alt="Repriced Symbol Logo"
+            className="block xl:hidden w-8 h-8 object-contain"
+          />
+        </Link>
       </div>
 
       {/* Center - Search Condensed UI */}
