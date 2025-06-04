@@ -79,7 +79,19 @@ const Property = () => {
 
           {/* Agent Sidebar */}
           <div className="hidden md:block sticky top-[100px] self-start bg-gray-50 p-4 rounded-xl shadow-sm h-fit">
-            <h3 className="text-lg font-semibold mb-2">Agent Information</h3>
+            <h3 className="text-lg font-semibold mb-2 text-center">
+              Agency Business Logo
+            </h3>
+            <div className="flex items-center gap-4">
+              {/* Agent Image */}
+              <div className="w-[150px] h-[150px] bg-yellow-200 flex items-center justify-center rounded-full text-gray-500 text-lg">
+                Agent Image
+              </div>
+
+              {/* Agent Name */}
+              <h3 className="text-xl font-semibold">Agent Name</h3>
+            </div>
+
             <p className="text-sm text-gray-700 mb-1">
               <strong>Agency:</strong> {listing.realtor}
             </p>
