@@ -70,7 +70,11 @@ const Property = () => {
             <div className="text-xs text-gray-400 uppercase">
               Listed by {listing.realtor}
             </div>
-            <div className="text-gray-400">[ Map Placeholder ]</div>
+            <div className="text-gray-400">
+              <div className="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg text-gray-500 text-lg">
+                Map Placeholder
+              </div>
+            </div>
           </div>
 
           {/* Agent Sidebar */}
@@ -92,9 +96,7 @@ const Property = () => {
           </div>
 
           <div className="md:col-span-2 text-sm text-gray-500 ">
-            <p>
-              {listing.descriptionLong} Long listing Description 
-            </p>
+            <p>{listing.descriptionLong} Long listing Description</p>
           </div>
         </div>
       </div>
