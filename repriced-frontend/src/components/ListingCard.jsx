@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaHeart, FaEllipsisH } from "react-icons/fa";
+import ImageWithPlaceholder from "./ImageWithPlaceholder";
 
 const ListingCard = ({
   title,
@@ -11,16 +12,15 @@ const ListingCard = ({
   bathrooms,
   carSpaces,
   landSize,
-  realtor
+  realtor,
 }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-      
       {/* Image Section */}
       <div className="relative">
-        <img
+        <ImageWithPlaceholder
           src={imageUrl}
           alt={title}
           className="w-full h-48 object-cover rounded-lg"
@@ -44,17 +44,15 @@ const ListingCard = ({
 
       {/* Card Content */}
       <div className="p-4 space-y-1">
+        <div className="flex items-center">
+          {/* Price */}
+          {price !== undefined && (
+            <p className="text-md font-bold text-gray-900">
+              ${price.toLocaleString()}
+            </p>
+          )}
 
-      <div className="flex items-center">
-
-        {/* Price */}
-        {price !== undefined && (
-      <p className="text-md font-bold text-gray-900">
-        ${price.toLocaleString()}
-      </p>
-      )}
-
-        {/* 3-dot menu */}
+          {/* 3-dot menu */}
           <div className="relative ml-auto">
             <button
               onClick={() => setShowMenu(!showMenu)}
@@ -78,18 +76,21 @@ const ListingCard = ({
               </div>
             )}
           </div>
-          </div>
+        </div>
 
         {/* Repriced Label */}
         <p className="text-xs text-gray-400">Repriced 3 days ago</p>
 
         {/* Address */}
-        <p className="text-sm font-medium text-gray-700">{address}144 Mount Lot Rd, Bowen</p>
+        <p className="text-sm font-medium text-gray-700">
+          {address}144 Mount Lot Rd, Bowen
+        </p>
 
         {/* Property Details */}
         <p className="text-xs text-gray-500">
           {/* {bedrooms} bd | {bathrooms} ba | {carSpaces} car | {landSize}m² */}
-          3 bd | 3 ba | 3 car | 800m²</p>
+          3 bd | 3 ba | 3 car | 800m²
+        </p>
 
         {/* Realtor */}
         <p className="text-xs text-gray-400 uppercase">{realtor}CLR Realtor</p>
