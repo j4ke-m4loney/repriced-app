@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import ListingCard from "../components/ListingCard";
 import Header from "../components/Header";
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 // This component fetches and displays a list of properties for sale
@@ -47,7 +47,7 @@ const Buy = () => {
   return (
     <>
       <Header />
-  
+
       <div className="flex flex-col md:flex-row pt-[160px] md:pt-0">
         {/* Mobile Map - Top */}
         <div className="block md:hidden w-full h-48 bg-gray-100 mb-4">

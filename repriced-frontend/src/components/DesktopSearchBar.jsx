@@ -1,6 +1,6 @@
 // DesktopSearchBar.jsx
-import React from 'react';
-import { FaSearch } from 'react-icons/fa';
+import React from "react";
+import { FaSearch } from "react-icons/fa";
 
 const DesktopSearchBar = () => {
   return (

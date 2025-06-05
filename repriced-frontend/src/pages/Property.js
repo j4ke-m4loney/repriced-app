@@ -4,6 +4,12 @@ import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 const Property = () => {
   const { id } = useParams();
   const [listing, setListing] = useState(null);
@@ -55,11 +61,25 @@ const Property = () => {
 
         {/* Image Section – Mobile */}
         <div className="block md:hidden rounded-xl overflow-hidden">
-          <img
-            src={listing.imageUrl}
-            alt={listing.title}
-            className="w-full h-[400px] object-cover rounded-xl"
-          />
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={10}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            className="rounded-xl"
+          >
+            {Array(5)
+              .fill(null)
+              .map((_, i) => (
+                <SwiperSlide key={i}>
+                  <img
+                    src={listing.imageUrl}
+                    alt={`${i + 1} of ${listing.title}`}
+                    className="w-full h-[400px] object-cover rounded-xl"
+                  />
+                </SwiperSlide>
+              ))}
+          </Swiper>
         </div>
 
         {/* Grid Layout: Content + Sidebar */}
