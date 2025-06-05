@@ -1,7 +1,11 @@
-repriced-backend/node_modules/
+# Root Node modules
+node_modules/
 
 # Frontend node_modules
 repriced-frontend/node_modules/
+
+# Backend node_modules
+repriced-backend/node_modules/
 
 # Logs
 **/logs/
