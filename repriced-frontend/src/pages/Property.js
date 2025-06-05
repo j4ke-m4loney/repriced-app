@@ -28,8 +28,9 @@ const Property = () => {
   return (
     <>
       <Header />
-      <div className="pt-[60px] max-w-7xl mx-auto px-4 space-y-6">
+      <div className="pt-[160px] md:pt-[60px] max-w-7xl mx-auto px-4 space-y-6">
         {/* Image Section */}
+        {/* Image Section – Desktop */}
         <div className="hidden md:flex gap-2 rounded-xl overflow-hidden">
           <div className="w-2/3">
             <img
@@ -50,6 +51,15 @@ const Property = () => {
                 />
               ))}
           </div>
+        </div>
+
+        {/* Image Section – Mobile */}
+        <div className="block md:hidden rounded-xl overflow-hidden">
+          <img
+            src={listing.imageUrl}
+            alt={listing.title}
+            className="w-full h-[400px] object-cover rounded-xl"
+          />
         </div>
 
         {/* Grid Layout: Content + Sidebar */}
