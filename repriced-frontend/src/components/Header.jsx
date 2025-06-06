@@ -12,7 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0); 
+      setIsScrolled(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -26,7 +26,9 @@ export default function Header() {
         {!isScrolled || showFullSearch ? (
           <DesktopSearchBar />
         ) : (
-          <CondensedSearchBar onOpenFullSearch={() => setShowFullSearch(true)} />
+          <CondensedSearchBar
+            onOpenFullSearch={() => setShowFullSearch(true)}
+          />
         )}
       </div>
 

@@ -35,11 +35,6 @@ const Property = () => {
   return (
     <>
       <HeaderProperty />
-      <AgentsBrandingBar
-        brandColor={listing.brandColor}
-        logoUrl={listing.agencyLogoUrl}
-        realtorName={listing.realtor}
-      />
       <div className="max-w-7xl mx-auto px-4 space-y-6">
         {/* Image Section */}
         {/* Image Section – Desktop */}
@@ -66,7 +61,7 @@ const Property = () => {
         </div>
 
         {/* Image Section – Mobile */}
-        <div className="block md:hidden rounded-xl overflow-hidden">
+        <div className="block md:hidden rounded-xl overflow-hidden mt-[100px]">
           <Swiper
             modules={[Pagination]}
             spaceBetween={10}

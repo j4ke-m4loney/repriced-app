@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const categories = [ // Array of category objects
+const categories = [
+  // Array of category objects
   {
     label: "Just Repriced",
     icon: "/images/icons/just-repriced.webp",
@@ -37,21 +38,21 @@ const categories = [ // Array of category objects
 
 const CategoryBar = () => {
   return (
-  <div className="bg-white py-0 overflow-x-auto whitespace-nowrap custom-scrollbar shadow-sm sticky top-[56px] z-30">
+    <div className="bg-white py-0 overflow-x-auto whitespace-nowrap custom-scrollbar shadow-sm sticky top-[96px] z-30">
       <div className="flex w-max gap-4 px-4 pb-2 mx-auto sm:justify-center">
-      {categories.map(({ label, icon }) => ( 
-            <button
-              key={label}
-              className="group flex flex-col items-center px-4 py-0 text-xs text-gray-600 hover:text-gray-800 transition-colors duration-200"
-            >
-              <img
-                src={icon}
-                alt={`${label} icon`}
-                className="w-6 h-6 mb-1 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:brightness-110"
-              />
-              {label}
-            </button>
-          ))}
+        {categories.map(({ label, icon }) => (
+          <button
+            key={label}
+            className="group flex flex-col items-center px-4 py-0 text-xs text-gray-600 hover:text-gray-800 transition-colors duration-200"
+          >
+            <img
+              src={icon}
+              alt={`${label} icon`}
+              className="w-6 h-6 mb-1 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:brightness-110"
+            />
+            {label}
+          </button>
+        ))}
       </div>
     </div>
   );
