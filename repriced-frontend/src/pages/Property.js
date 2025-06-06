@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Header from "../components/Header";
+import HeaderProperty from "../components/HeaderProperty";
 import Footer from "../components/Footer";
 import AgentBrandBar from "../components/AgentsBrandingBar";
 
@@ -34,15 +34,12 @@ const Property = () => {
 
   return (
     <>
-      <Header />
-
-      <AgentBrandBar
+      <HeaderProperty
         brandColor={listing.brandColor}
         logoUrl={listing.agencyLogoUrl}
         realtorName={listing.realtor}
       />
-
-      <div className="pt-[160px] md:pt-[60px] max-w-7xl mx-auto px-4 space-y-6">
+      <div className="max-w-7xl mx-auto px-4 space-y-6">
         {/* Image Section */}
         {/* Image Section – Desktop */}
         <div className="hidden md:flex gap-2 rounded-xl overflow-hidden">
