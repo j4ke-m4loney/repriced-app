@@ -3,7 +3,6 @@ import HeaderNav from "./HeaderNav";
 import DesktopSearchBar from "./DesktopSearchBar";
 import MobileSearchBar from "./MobileSearchBar";
 import CategoryBar from "./CategoryBar";
-import AgentBrandBar from "./AgentsBrandingBar";
 
 export default function HeaderProperty({ brandColor, logoUrl, realtorName }) {
   return (
@@ -12,11 +11,6 @@ export default function HeaderProperty({ brandColor, logoUrl, realtorName }) {
       <div className="hidden md:block">
         <HeaderNav activeTab="Buy" setActiveTab={() => {}} />
         <DesktopSearchBar />
-        <AgentBrandBar
-          brandColor={brandColor}
-          logoUrl={logoUrl}
-          realtorName={realtorName}
-        />
       </div>
 
       {/* Mobile View */}
