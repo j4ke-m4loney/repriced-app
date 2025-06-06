@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AgentBrandBar from "../components/AgentsBrandingBar";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -34,6 +35,13 @@ const Property = () => {
   return (
     <>
       <Header />
+
+      <AgentBrandBar
+        brandColor={listing.brandColor}
+        logoUrl={listing.agencyLogoUrl}
+        realtorName={listing.realtor}
+      />
+
       <div className="pt-[160px] md:pt-[60px] max-w-7xl mx-auto px-4 space-y-6">
         {/* Image Section */}
         {/* Image Section – Desktop */}
