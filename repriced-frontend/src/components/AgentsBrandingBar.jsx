@@ -36,7 +36,7 @@ const AgentsBrandBar = ({ brandColor = "#f5f5f5", logoUrl, realtorName }) => {
 
       <div
         className={`w-full flex justify-center items-center border-t border-b border-gray-200 transition-all duration-200 ${
-          isSticky ? "fixed top-0 z-40" : "relative"
+          isSticky ? "md:fixed md:top-0 md:z-40" : "relative"
         }`}
         style={{ backgroundColor: brandColor, height: "48px" }}
       >

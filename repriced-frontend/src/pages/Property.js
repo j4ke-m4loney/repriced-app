@@ -61,7 +61,7 @@ const Property = () => {
         </div>
 
         {/* Image Section – Mobile */}
-        <div className="block md:hidden rounded-xl overflow-hidden mt-[100px]">
+        <div className="block md:hidden rounded-xl overflow-hidden mt-4 pt-12">
           <Swiper
             modules={[Pagination]}
             spaceBetween={10}

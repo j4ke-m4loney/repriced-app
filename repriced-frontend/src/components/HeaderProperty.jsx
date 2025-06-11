@@ -3,7 +3,7 @@ import HeaderNav from "./HeaderNav";
 import DesktopSearchBar from "./DesktopSearchBar";
 import MobileSearchBar from "./MobileSearchBar";
 import CategoryBar from "./CategoryBar";
-import AgentsBrandingBar from "./AgentsBrandingBar"; // ✅ Add this
+import AgentsBrandingBar from "./AgentsBrandingBar";
 
 export default function HeaderProperty({ brandColor, logoUrl, realtorName }) {
   return (
@@ -20,7 +20,7 @@ export default function HeaderProperty({ brandColor, logoUrl, realtorName }) {
       </div>
 
       {/* Mobile View */}
-      <div className="fixed top-0 left-0 w-full z-50 bg-white md:hidden shadow-sm">
+      <div className="fixed top-0 left-0 w-full z-50 bg-white md:hidden shadow-sm space-y-1">
         <MobileSearchBar />
         <CategoryBar />
         <AgentsBrandingBar
