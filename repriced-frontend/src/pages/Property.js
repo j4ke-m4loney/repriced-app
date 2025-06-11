@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import HeaderProperty from "../components/HeaderProperty";
 import Footer from "../components/Footer";
-import AgentsBrandingBar from "../components/AgentsBrandingBar";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
