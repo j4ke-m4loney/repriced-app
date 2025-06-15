@@ -3,12 +3,9 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import HeaderProperty from "../components/HeaderProperty";
 import Footer from "../components/Footer";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/pagination";
+import MobileImageSwiper from "../components/property/MobileImageSwiper";
+import DesktopImageGrid from "../components/property/DesktopImageGrid";
+import AgentSidebar from "../components/property/AgentSidebar";
 
 const Property = () => {
   const { id } = useParams();
@@ -34,55 +31,16 @@ const Property = () => {
   return (
     <>
       <HeaderProperty />
+
+      {/* Image Section – Mobile */}
+      <MobileImageSwiper imageUrl={listing.imageUrl} title={listing.title} />
+
       <div className="max-w-7xl mx-auto px-4 space-y-6">
         {/* Image Section */}
         {/* Image Section – Desktop */}
-        <div className="hidden md:flex gap-2 rounded-xl overflow-hidden">
-          <div className="w-2/3">
-            <img
-              src={listing.imageUrl}
-              alt={listing.title}
-              className="w-full h-[500px] object-cover"
-            />
-          </div>
-          <div className="w-1/3 grid grid-cols-2 grid-rows-2 gap-2">
-            {Array(4)
-              .fill(null)
-              .map((_, i) => (
-                <img
-                  key={i}
-                  src={listing.imageUrl}
-                  alt={`${i + 1} of ${listing.title}`}
-                  className="w-full h-[245px] object-cover"
-                />
-              ))}
-          </div>
-        </div>
+        <DesktopImageGrid imageUrl={listing.imageUrl} title={listing.title} />
 
         <div className="block md:hidden h-[150px]"></div>
-
-        {/* Image Section – Mobile */}
-        <div className="block md:hidden rounded-xl overflow-hidden">
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={10}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            className="rounded-xl"
-          >
-            {Array(5)
-              .fill(null)
-              .map((_, i) => (
-                <SwiperSlide key={i}>
-                  <img
-                    src={listing.imageUrl}
-                    alt={`${i + 1} of ${listing.title}`}
-                    className="w-full h-[400px] object-cover rounded-xl"
-                  />
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </div>
 
         {/* Grid Layout: Content + Sidebar */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -110,34 +68,7 @@ const Property = () => {
           </div>
 
           {/* Agent Sidebar */}
-          <div className="hidden md:block sticky top-[100px] self-start bg-gray-50 p-4 rounded-xl shadow-sm h-fit">
-            <h3 className="text-lg font-semibold mb-2 text-center">
-              Agency Business Logo
-            </h3>
-            <div className="flex items-center gap-4">
-              {/* Agent Image */}
-              <div className="w-[150px] h-[150px] bg-gray-200 flex items-center justify-center rounded-full text-gray-500 text-lg">
-                Agent Image
-              </div>
-
-              {/* Agent Name */}
-              <h3 className="text-xl font-semibold">Agent Name</h3>
-            </div>
-
-            <p className="text-sm text-gray-700 mb-1">
-              <strong>Agency:</strong> {listing.realtor}
-            </p>
-            <p className="text-sm text-gray-700 mb-1">
-              <strong>Phone:</strong> 0412 345 678
-            </p>
-            <p className="text-sm text-gray-700 mb-4">
-              <strong>Email:</strong> agent@
-              {listing.realtor?.toLowerCase().replace(/\s/g, "")}.com
-            </p>
-            <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-sm w-full">
-              Contact Agent
-            </button>
-          </div>
+          <AgentSidebar realtor={listing.realtor} />
 
           <div className="md:col-span-2 text-sm text-gray-500 ">
             <p>{listing.descriptionLong} Long listing Description</p>
