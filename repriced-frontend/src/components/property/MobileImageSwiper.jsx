@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const MobileImageSwiper = ({ imageUrl, title }) => (
-  <div className="block md:hidden">
+  <div className="block md:hidden h-[220px]">
     <Swiper
       modules={[Pagination]}
       spaceBetween={0}

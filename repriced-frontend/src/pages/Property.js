@@ -33,7 +33,9 @@ const Property = () => {
       <HeaderProperty />
 
       {/* Image Section – Mobile */}
-      <MobileImageSwiper imageUrl={listing.imageUrl} title={listing.title} />
+      <div className="block md:hidden mt-[150px]">
+        <MobileImageSwiper imageUrl={listing.imageUrl} title={listing.title} />
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 space-y-6">
         {/* Image Section */}
