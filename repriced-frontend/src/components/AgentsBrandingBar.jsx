@@ -31,7 +31,7 @@ const AgentsBrandBar = ({ brandColor = "#f5f5f5", logoUrl, realtorName }) => {
 
   return (
     <>
-      {/* Marker element to track scroll position */}
+      {/* Element to track scroll position */}
       <div ref={barRef}></div>
 
       <div
