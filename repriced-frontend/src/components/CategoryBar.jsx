@@ -38,8 +38,8 @@ const categories = [
 
 const CategoryBar = () => {
   return (
-    <div className="bg-white py-0 overflow-x-auto whitespace-nowrap custom-scrollbar shadow-sm sticky top-[96px] z-30">
-      <div className="flex w-max gap-4 px-4 pb-2 mx-auto sm:justify-center">
+    <div className="bg-white py-1 overflow-x-auto whitespace-nowrap custom-scrollbar shadow-sm sticky top-[48px] z-20">
+      <div className="flex w-max gap-1 px-4 pb-2 mx-auto sm:justify-center">
         {categories.map(({ label, icon }) => (
           <button
             key={label}

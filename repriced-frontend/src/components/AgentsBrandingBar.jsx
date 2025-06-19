@@ -32,11 +32,11 @@ const AgentsBrandBar = ({ brandColor = "#f5f5f5", logoUrl, realtorName }) => {
   return (
     <>
       {/* Element to track scroll position */}
-      <div ref={barRef}></div>
+      <div ref={barRef} className="h-0"></div>
 
       <div
-        className={`w-full flex justify-center items-center border-t border-b border-gray-200 transition-all duration-200 ${
-          isSticky ? "md:fixed md:top-0 md:z-40" : "relative"
+        className={`w-full flex justify-center items-center border-t border-b border-gray-200 transition-all duration-200 z-40 ${
+          isSticky ? "md:fixed md:top-0" : "relative"
         }`}
         style={{ backgroundColor: brandColor, height: "48px" }}
       >
