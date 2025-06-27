@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 
 const AgentsBrandBar = ({ brandColor = "#f5f5f5", logoUrl, realtorName }) => {
   const barRef = useRef(null);
@@ -40,11 +42,23 @@ const AgentsBrandBar = ({ brandColor = "#f5f5f5", logoUrl, realtorName }) => {
         }`}
         style={{ backgroundColor: brandColor, height: "48px" }}
       >
-        <img
-          src={logoUrl || "/logo/repriced-logo-symbol-2.svg"}
-          alt={`${realtorName} logo`}
-          className="h-8 object-contain"
-        />
+        {/* Back button (only on mobile) */}
+        <button
+          onClick={() => window.history.back()}
+          className="block md:hidden ml-4"
+          aria-label="Go back"
+        >
+          {/* Simple left arrow SVG */}
+          <ArrowLeftIcon className="w-6 h-6 text-gray-700" />
+        </button>
+
+        <div className="flex-1 flex justify-center pr-10 md:pr-0">
+          <img
+            src={logoUrl || "/logo/repriced-logo-symbol-2.svg"}
+            alt={`${realtorName} logo`}
+            className="h-8 object-contain"
+          />
+        </div>
       </div>
     </>
   );

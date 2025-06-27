@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -13,7 +12,7 @@ const MobileImageSwiper = ({ imageUrl, title }) => (
         slidesPerView={1}
         pagination={{
           clickable: true,
-          el: ".swiper-pagination", // 👈 This tells Swiper where to render the bullets
+          el: ".swiper-pagination", // Swiper injects into this
         }}
         className="custom-swiper"
       >
@@ -29,8 +28,13 @@ const MobileImageSwiper = ({ imageUrl, title }) => (
             </SwiperSlide>
           ))}
       </Swiper>
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 swiper-pagination bg-white/70 px-3 py-1 rounded-full shadow-sm border-red-600" />
+
+      {/* Absolute wrapper to center the pill */}
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-20 z-10">
+        <div className="swiper-pagination" />
+      </div>
     </div>
   </div>
 );
+
 export default MobileImageSwiper;

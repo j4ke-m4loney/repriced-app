@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom styles for the search input and property type input */
 .search-input:hover + .input-sep {
   display: none;
@@ -10,7 +9,7 @@
 
 /* Hide the separator when the input is focused */
 .property-type-input:hover + .property-sep {
-  display: none; 
+  display: none;
 }
 
 /* Scrollbar customization */
@@ -31,28 +30,28 @@
   background: #666;
 }
 
-/* Custom styles for Swiper bullets */
-/* .custom-swiper .swiper-pagination-bullet {
-  @apply bg-white opacity-100 w-2 h-1 mx-1 rounded-full transition-all duration-200;
-}
-
-.custom-swiper .swiper-pagination-bullet-active {
-  @apply bg-gray-400 scale-110;
-} */
-.custom-swiper .swiper-pagination {
-  display: flex;
+.swiper-pagination {
+  position: relative;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-pagination {
-  @apply flex justify-center items-center;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(209, 213, 219, 0.4);
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  z-index: 10;
 }
 
 .swiper-pagination-bullet {
-  @apply bg-gray-400 w-2 h-2 mx-0.5 rounded-full opacity-100;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  opacity: 1;
+  z-index: 20;
+  margin: 0 0.125rem;
 }
 
 .swiper-pagination-bullet-active {
-  @apply bg-black;
+  background-color: rgb(255, 255, 255) !important;
 }
