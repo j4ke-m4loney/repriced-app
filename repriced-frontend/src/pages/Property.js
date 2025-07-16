@@ -76,6 +76,10 @@ const Property = () => {
             <p>{listing.descriptionLong} Long listing Description</p>
           </div>
         </div>
+        {/* Create Category Icons
+          Create Property Valuation details
+          Create Agent Details scrolling feature
+          Create Map */}
       </div>
       <Footer />
     </>
