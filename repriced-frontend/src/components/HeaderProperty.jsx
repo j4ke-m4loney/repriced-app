@@ -34,6 +34,11 @@ export default function HeaderProperty({ brandColor, logoUrl, realtorName }) {
       <div></div>
       <div></div>
       <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </header>
   );
 }
