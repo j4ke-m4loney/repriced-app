@@ -29,16 +29,6 @@ export default function HeaderProperty({ brandColor, logoUrl, realtorName }) {
           realtorName={realtorName}
         />
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </header>
   );
 }
