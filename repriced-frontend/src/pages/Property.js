@@ -78,6 +78,8 @@ const Property = () => {
         </div>
 
         <div>{/* Category Icons */}</div>
+        <div>{/* Category Icons */}</div>
+        <div>{/* Category Icons */}</div>
 
         {/*
           Create Property Valuation details
